@@ -1,9 +1,15 @@
 alias ll='ls -alG'
-export EDITOR=vim
-set P4CONFIG=.p4config
-export P4EDITOR=vim
-alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
+alias bn='babel-node'
 
+set P4CONFIG=.p4config
+
+export EDITOR=vim
+export P4EDITOR=vim
+export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6)
+export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$JAVA6_HOME;
+
+#source ~/.bash-git-prompt/gitprompt.sh
 if [ -d ~/.dotfiles/bashrc.d ]; then
     for i in ~/.dotfiles/bashrc.d/*.sh; do
         if [ -r $i ]; then

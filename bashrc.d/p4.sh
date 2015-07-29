@@ -1,3 +1,5 @@
+. ~/.dotfiles/bin/p4-completion.sh
+
 function parse_p4_branch_dvcs () {
 	P4INITROOT=`p4 set | grep P4INITROOT`
 	if [ $? -eq 0 ]; then
