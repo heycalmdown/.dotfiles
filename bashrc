@@ -10,7 +10,7 @@ export PATH=~/Documents/bin:$PATH
 #export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8)
 #export JAVA_HOME=$JAVA6_HOME;
 
-#source ~/.bash-git-prompt/gitprompt.sh
+source ~/.dotfiles/bash-git-prompt/gitprompt.sh
 if [ -d ~/.dotfiles/bashrc.d ]; then
     for i in ~/.dotfiles/bashrc.d/*.sh; do
         if [ -r $i ]; then
