@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("asset-island"
+ (filename . "~/Documents/edge/rhombus/meta/be/asset-island/")
+ (front-context-string . "Dockerfile\n  -r-")
+ (rear-context-string . "88 Sep  1 21:39 ")
+ (position . 299))
+("meta"
+ (filename . "~/Documents/edge/rhombus/meta/")
+ (front-context-string . ".DS_Store\n  -r--")
+ (rear-context-string . "44 Aug 31 09:59 ")
+ (position . 287))
+)
