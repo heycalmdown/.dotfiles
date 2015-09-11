@@ -2,10 +2,7 @@
 (load-library "melpa")
 (load-library "style")
 (load-library "keys")
-
-
-(require 'p4)
-
+(load-library "plugins")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
