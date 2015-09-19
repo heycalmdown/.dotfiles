@@ -1,5 +1,6 @@
 alias ll='ls -alG'
 alias bn='babel-node'
+alias evdev='eval $(dm env dev)'
 
 set P4CONFIG=.p4config
 
