@@ -3,8 +3,8 @@ alias bn='babel-node'
 
 set P4CONFIG=.p4config
 
-export EDITOR=vim
-export P4EDITOR=vim
+export EDITOR=emacs
+export P4EDITOR=emacs
 export PATH=~/Documents/bin:$PATH
 #export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6)
 #export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8)
