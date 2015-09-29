@@ -2,12 +2,22 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("asset-island"
+(("pro) be"
+ (filename . "~/Documents/devel/edge/rhombus/meta/be/")
+ (front-context-string . "README.md\n  drwx")
+ (rear-context-string . "81 Sep  8 09:32 ")
+ (position . 293))
+("pro) meta"
+ (filename . "~/Documents/devel/edge/rhombus/meta/")
+ (front-context-string . ".DS_Store\n  -r--")
+ (rear-context-string . "92 Jul 27 17:28 ")
+ (position . 294))
+("mbp) asset-island"
  (filename . "~/Documents/edge/rhombus/meta/be/asset-island/")
  (front-context-string . "Dockerfile\n  -r-")
  (rear-context-string . "88 Sep  1 21:39 ")
  (position . 299))
-("meta"
+("mbp) meta"
  (filename . "~/Documents/edge/rhombus/meta/")
  (front-context-string . ".DS_Store\n  -r--")
  (rear-context-string . "44 Aug 31 09:59 ")
