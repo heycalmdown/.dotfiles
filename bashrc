@@ -5,6 +5,7 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias docl='docker-container-list'
 alias doil='docker-image-list'
+alias eg='open -a emacs .'
 
 set P4CONFIG=.p4config
 
