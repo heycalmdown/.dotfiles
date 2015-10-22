@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("mbp) edge-ui/src/script"
+(("pro) edge-ui/src/scripts"
+ (filename . "~/Documents/devel/edge/rhombus/meta/fe/edge-ui/src/scripts/")
+ (front-context-string . ".DS_Store\n  -r--")
+ (rear-context-string . "48 Aug 28 21:11 ")
+ (position . 313))
+("mbp) edge-ui/src/script"
  (filename . "~/Documents/edge/rhombus/meta/fe/edge-ui/src/scripts/")
  (front-context-string . "_all.ts\n  drwxr-")
  (rear-context-string . " 0 Oct 14 15:46 ")
