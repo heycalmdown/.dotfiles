@@ -26,3 +26,5 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+;; https://github.com/emacs-helm/helm
+(require 'helm-config)
