@@ -5,6 +5,8 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias docl='docker-container-list'
 alias doil='docker-image-list'
+alias dorm='docker rm $(docker ps -qa --filter="status=exited")'
+alias dormi='docker images -qf dangling=true | xargs docker rmi'
 
 alias eg='open -a emacs .'
 alias vscode='open -a "Visual Studio Code" .'
