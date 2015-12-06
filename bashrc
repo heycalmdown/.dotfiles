@@ -5,11 +5,12 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias docl='docker-container-list'
 alias doil='docker-image-list'
+alias dora='docker rm -f $(docker ps -qa)'
 alias dorm='docker rm $(docker ps -qa --filter="status=exited")'
 alias dormi='docker images -qf dangling=true | xargs docker rmi'
 alias dockviz="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock nate/dockviz"
 
-alias eg='open -a emacs .'
+alias eg='open -a emacs'
 alias vscode='open -a "Visual Studio Code" .'
 
 set P4CONFIG=.p4config
