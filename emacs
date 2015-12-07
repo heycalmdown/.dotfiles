@@ -4,7 +4,7 @@
 (load-library "keys")
 (load-library "plugins")
 
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
