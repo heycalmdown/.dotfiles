@@ -435,3 +435,4 @@ _docker_compose() {
 }
 
 complete -F _docker_compose docker-compose
+complete -F _docker_compose dc

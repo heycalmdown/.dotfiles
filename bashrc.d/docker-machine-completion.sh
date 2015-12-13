@@ -242,3 +242,4 @@ _docker-machine() {
 }
 
 complete -F _docker-machine docker-machine
+complete -F _docker-machine dm
