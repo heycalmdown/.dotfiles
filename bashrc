@@ -5,18 +5,22 @@ alias dm='docker-machine'
 alias dc='docker-compose'
 alias docl='docker-container-list'
 alias doil='docker-image-list'
+alias dosa='docker stop $(docker ps -q)'
 alias dora='docker rm -f $(docker ps -qa)'
 alias dorm='docker rm $(docker ps -qa --filter="status=exited")'
 alias dormi='docker images -qf dangling=true | xargs docker rmi'
+alias dost='docker stats $(docker ps --format {{.Names}})'
 alias dockviz="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock nate/dockviz"
+
+alias dce='dc -f dc-env.yml'
 
 alias eg='open -a emacs'
 alias vscode='open -a "Visual Studio Code" .'
 
 set P4CONFIG=.p4config
 
-export EDITOR=emacs
-export P4EDITOR=emacs
+#export EDITOR=emacs
+#export P4EDITOR=emacs
 export PATH=~/Documents/bin:~/.dotfiles/bin:$PATH
 #export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6)
 #export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8)
@@ -35,3 +39,4 @@ fi
 
 export NVM_DIR="/Users/kson/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+alias http='docker run -it --rm --net=host clue/httpie'
