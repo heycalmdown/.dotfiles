@@ -30,6 +30,13 @@ alias redis='docker run -it --rm --net=host redis redis-cli'
 alias mvn='docker run -it --rm -v $PWD:/root -w /root maven mvn'
 alias mongo='dorn --net=host mongo mongo'
 alias s3='dorn --env-file=/Users/kson/.aws/envvars -v $PWD:/mac -w /mac xueshanf/awscli aws s3'
+alias aws='dorn --env-file=/Users/kson/.aws/envvars -v $PWD:/mac -w /mac xueshanf/awscli aws'
+
+
+# islands
+function ver() {
+    grep "version" $@/package.json | grep -Eo '"[0-9]+.*"' | grep -Eo '[^"]+'
+}
 
 # open
 function swarm() {
