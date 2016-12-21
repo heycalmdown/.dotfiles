@@ -1,0 +1,7 @@
+set P4CONFIG=.p4config
+#export EDITOR=emacs
+#export P4EDITOR=emacs
+export PATH=~/Documents/bin:~/.dotfiles/bin:$PATH
+export NVM_DIR="/Users/kson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
