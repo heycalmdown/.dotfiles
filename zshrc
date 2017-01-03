@@ -90,3 +90,7 @@ DEFAULT_USER=kson
 source ~/.dotfiles/bash_aliases
 source ~/.dotfiles/bash_exports
 
+if [ -r ~/.ksonrc ]; then
+	source ~/.ksonrc
+fi
+

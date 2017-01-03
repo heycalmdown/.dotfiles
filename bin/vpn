@@ -1,0 +1,16 @@
+case $1 in
+	on)
+		osascript securid.scpt
+		printf "$DEFAULT_USER\n$PINCODE$(pbpaste)\ny" | /opt/cisco/anyconnect/bin/vpn -s connect "AP Seoul"
+		exit 0
+		;;
+	off)
+		/opt/cisco/anyconnect/bin/vpn disconnect
+		exit 0
+		;;
+	*)
+		echo $"Usage: $0 {on|off}"
+		exit 1
+esac
+
+

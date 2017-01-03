@@ -1,6 +1,10 @@
 source ~/.dotfiles/bash_aliases
 source ~/.dotfiles/bash_exports
 
+if [ -r ~/.ksonrc ]; then
+	source ~/.ksonrc
+fi
+
 # islands
 function ver() {
     grep "version" $@/package.json | grep -Eo '"[0-9]+.*"' | grep -Eo '[^"]+'
