@@ -1,6 +1,6 @@
 case $1 in
 	on)
-		osascript securid.scpt
+		osascript $(dirname ${BASH_SOURCE[0]})/securid.scpt
 		printf "$DEFAULT_USER\n$PINCODE$(pbpaste)\ny" | /opt/cisco/anyconnect/bin/vpn -s connect "AP Seoul"
 		exit 0
 		;;
