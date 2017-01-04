@@ -9,8 +9,8 @@ case $1 in
 		exit 0
 		;;
 	*)
-		echo $"Usage: $0 {on|off}"
-		exit 1
+		/opt/cisco/anyconnect/bin/vpn $1
+		exit 0
 esac
 
 
