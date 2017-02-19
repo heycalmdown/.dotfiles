@@ -1,10 +1,3 @@
-# directory shortcut
-alias be='cd /Users/kson/Documents/edge/rhombus/meta/be'
-alias eb='cd /Users/kson/Documents/edge/rhombus/meta/cmn/edge-base'
-
-# typescript
-alias t='typings'
-
 # bash
 alias ll='ls -alG'
 
