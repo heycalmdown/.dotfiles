@@ -1,5 +1,6 @@
 # bash
 alias ll='ls -alG'
+alias wb='whalebrew'
 
 # docker
 alias dops='docker ps'
