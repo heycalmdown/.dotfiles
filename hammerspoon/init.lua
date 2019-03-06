@@ -3,17 +3,21 @@ function esc()
     local win = hs.window.focusedWindow()
     local app = win:application()
     local title = app:title()
-    if title == 'MacVim' or title == 'Code' or title == 'iTerm2' or title == 'Alfred 3' then
-        local inputEnglish = "com.apple.keylayout.ABC"
+    local inputEnglish = "com.apple.keylayout.ABC"
+    local input_source = hs.keycodes.currentSourceID()
 
-        local input_source = hs.keycodes.currentSourceID()
-
+    if title == 'MacVim' or title == 'Code' or title == 'iTerm2' or title == 'Alfred 3' or title == 'Emacs' then
         if not (input_source == inputEnglish) then
             hs.eventtap.keyStroke({}, 'right')
             hs.keycodes.currentSourceID(inputEnglish)
         end
 
         hs.eventtap.keyStroke({}, 'escape')
+    elseif title == 'Bear' then
+        if not (input_source == inputEnglish) then
+            hs.eventtap.keyStroke({}, 'right')
+            hs.keycodes.currentSourceID(inputEnglish)
+        end
     else
         hs.alert.show(app:title())
     end
