@@ -97,3 +97,7 @@ if [ -r ~/.ksonrc ]; then
 	source ~/.ksonrc
 fi
 
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
