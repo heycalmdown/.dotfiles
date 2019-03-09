@@ -24,7 +24,7 @@ function esc()
 end
 
 function onWifiTransition(event, interface, old_sid, new_ssid)
-    hs.alert.show(new_ssid)
+    hs.alert.show('WiFi - ' .. new_ssid)
 end
 
 hs.hotkey.bind({'control'}, "[", esc)
