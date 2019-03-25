@@ -1,4 +1,6 @@
 # This is Git's per-user configuration file.
+[includeIf "gitdir:~/Exercism/"]
+  path = ~/.dotfiles/gitconfig-personal
 [includeIf "gitdir:~/.dotfiles/"]
   path = ~/.dotfiles/gitconfig-personal
 [includeIf "gitdir:~/Development/"]
