@@ -8,7 +8,8 @@ export ZSH=/Users/kson/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +53,8 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+plugins=(autojump)
+plugins+=(git)
 plugins+=(zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
@@ -101,3 +103,15 @@ fi
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+
+source ~/.dotfiles/zsh/.purepower
+
+POWERLEVEL9K_MODE=nerdfont-complete
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_ROOT_ICON=$'\uF09C'
+POWERLEVEL9K_TIME_ICON=$'\uF017'
+POWERLEVEL9K_TIME_BACKGROUND=magenta
+POWERLEVEL9K_STATUS_OK_BACKGROUND=grey53
+
