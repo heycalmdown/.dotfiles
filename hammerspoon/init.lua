@@ -36,3 +36,45 @@ spoon.WiFiTransitions.actions = {
     }
 }
 spoon.WiFiTransitions:start()
+
+local lastChangeCount = hs.pasteboard.changeCount()
+
+function isempty(s)
+  return s == nil or s == ''
+end
+
+function trim(s)
+  if isempty(s) then
+    return ""
+  end
+  return (s:gsub("^%s*(.-)%s*$", "%1"))
+end
+
+hs.timer.new(1, function()
+  local currentChangeCount = hs.pasteboard.changeCount()
+  if lastChangeCount ~= currentChangeCount then
+    for i, v in ipairs(hs.pasteboard.contentTypes()) do
+      if v == "public.utf8-plain-text" then
+        local clipping = trim(hs.pasteboard.getContents())
+        local len = string.len(clipping)
+        local endIndex = utf8.offset(clipping, 30)
+        if endIndex == nil then
+          hs.alert.show(string.sub(clipping, 1, len))
+        else
+          hs.alert.show(string.sub(clipping, 1, endIndex - 1) .. "...")
+        end
+      elseif v == "public.png" then
+        local img = hs.pasteboard.readImage()
+        local size = img:size()
+        hs.alert.show("PNG [" .. math.floor(size["w"]) .. "x" .. math.floor(size["h"]) .. "]")
+      elseif v == "public.tiff" then
+        local img = hs.pasteboard.readImage()
+        local size = img:size()
+        hs.alert.show("TIFF [" .. math.floor(size["w"]) .. "x" .. math.floor(size["h"]) .. "]")
+      else
+        print(v)
+      end
+    end
+    lastChangeCount = currentChangeCount
+  end
+end):start()
