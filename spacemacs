@@ -34,6 +34,9 @@ values."
      lua
      ranger
      html
+     typescript
+     javascript
+     csv
      yaml
      racket
      ;; ----------------------------------------------------------------
