@@ -21,15 +21,6 @@ alias doec='docker exec -it'
 alias dorn='docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock'
 alias dce='dc -f dce.yml'
 
-# docker run
-alias dockviz="dorn nate/dockviz"
-alias http='docker run -it --rm --net=host clue/httpie'
-alias redis='docker run -it --rm --net=host redis redis-cli'
-alias mvn='docker run -it --rm -v $PWD:/root -w /root maven mvn'
-alias mongo='dorn --net=host mongo mongo'
-alias s3='dorn --env-file=/Users/kson/.aws/envvars -v $PWD:/mac -w /mac xueshanf/awscli aws s3'
-alias aws='dorn --env-file=/Users/kson/.aws/envvars -v $PWD:/mac -w /mac xueshanf/awscli aws'
-
 # loadtest
 alias sba="./sphd_betago_aws.py act_betago_aws_config_loadtest.yml"
 alias eco='eval $(dm env act-consul-000)'
