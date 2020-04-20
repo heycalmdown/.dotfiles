@@ -1,9 +1,8 @@
-eval $(thefuck --alias)
-
 # bash
 alias ll='ls -alG'
-alias wb='whalebrew'
-alias shit='fuck'
+
+# modern commands
+alias lll='exa -al --icons'
 
 # docker
 alias dops='docker ps'
