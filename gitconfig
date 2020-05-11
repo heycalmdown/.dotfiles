@@ -12,6 +12,7 @@
 
 [core]
 	excludesfile = /Users/kson/.gitignore_global
+	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -24,3 +25,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[interactive]
+	diffFilter = delta --color-only
+
