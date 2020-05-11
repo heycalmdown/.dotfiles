@@ -3,6 +3,7 @@ alias ll='ls -alG'
 
 # modern commands
 alias lll='exa -al --icons'
+alias cat=bat
 
 # docker
 alias dops='docker ps'
@@ -19,16 +20,6 @@ alias dost='docker stats $(docker ps --format {{.Names}})'
 alias doec='docker exec -it'
 alias dorn='docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock'
 alias dce='dc -f dce.yml'
-
-# loadtest
-alias sba="./sphd_betago_aws.py act_betago_aws_config_loadtest.yml"
-alias eco='eval $(dm env act-consul-000)'
-alias erp='eval $(dm env act-redis-predixy-000)'
-alias ega='eval $(dm env act-gateway-000)'
-alias eg2='eval $(dm env act-gateway-001)'
-alias epu='eval $(dm env act-push-000)'
-alias ep2='eval $(dm env act-push-001)'
-alias ecs='eval $(dm env act-common-swarm-000)'
 
 alias dsrm='docker stack rm'
 alias dsdp='docker stack deploy --with-registry-auth -c docker-compose.yml'
