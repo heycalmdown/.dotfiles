@@ -1,8 +1,8 @@
 # bash
-alias ll='ls -alG'
+#alias ll='ls -alG'
 
 # modern commands
-alias lll='exa -al --icons'
+alias ll='exa -al --icons'
 alias cat=bat
 
 # docker
