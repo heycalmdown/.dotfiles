@@ -25,6 +25,9 @@ alias dsrm='docker stack rm'
 alias dsdp='docker stack deploy --with-registry-auth -c docker-compose.yml'
 alias dsr='docker service'
 
+# whalelike
+alias xhyve='docker run --rm -it --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n sh'
+
 # functions
 function dolog_first {
   KEYWORD=$1
