@@ -1,5 +1,6 @@
 # bash
 #alias ll='ls -alG'
+alias inet='ifconfig | grep inet\ '
 
 # modern commands
 alias ll='exa -al --icons'
