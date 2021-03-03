@@ -1,14 +1,12 @@
 # This is Git's per-user configuration file.
-[includeIf "gitdir:~/Exercism/"]
-  path = ~/.dotfiles/gitconfig-personal
 [includeIf "gitdir:~/.dotfiles/"]
   path = ~/.dotfiles/gitconfig-personal
 [includeIf "gitdir:~/Development/"]
   path = ~/.dotfiles/gitconfig-personal
-[includeIf "gitdir:~/Development/git/"]
-  path = ~/.dotfiles/gitconfig-ea
-[includeIf "gitdir:~/Development/gitlab/"]
-  path = ~/.dotfiles/gitconfig-ea
+[includeIf "gitdir:~/dev/"]
+  path = ~/.dotfiles/gitconfig-personal
+[includeIf "gitdir:~/dev/codebrick/"]
+  path = ~/.dotfiles/gitconfig-cb
 
 [core]
 	excludesfile = /Users/kson/.gitignore_global
