@@ -7,6 +7,8 @@
   path = ~/.dotfiles/gitconfig-personal
 [includeIf "gitdir:~/dev/codebrick/"]
   path = ~/.dotfiles/gitconfig-cb
+[includeIf "gitdir:~/Development/codebrick/"]
+  path = ~/.dotfiles/gitconfig-cb
 
 [core]
 	excludesfile = /Users/kson/.gitignore_global
