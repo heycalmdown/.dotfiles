@@ -7,6 +7,8 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+path=('/opt/homebrew/bin' $path)
+export PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/kson/.oh-my-zsh
@@ -99,8 +101,10 @@ DEFAULT_USER=kson
 
 source ~/.dotfiles/bash_aliases
 source ~/.dotfiles/bash_exports
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -r ~/.ksonrc ]; then
 	source ~/.ksonrc
@@ -123,3 +127,4 @@ POWERLEVEL9K_STATUS_OK_BACKGROUND=grey53
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
