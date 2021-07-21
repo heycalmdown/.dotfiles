@@ -8,7 +8,7 @@
 [includeIf "gitdir:~/dev/codebrick/"]
   path = ~/.dotfiles/gitconfig-cb
 [includeIf "gitdir:~/Development/codebrick/"]
-  path = ~/.dotfiles/gitconfig-cb
+  path = ~/.dotfiles/gitconfig-personal
 
 [core]
 	excludesfile = /Users/kson/.gitignore_global
@@ -28,3 +28,5 @@
 [interactive]
 	diffFilter = delta --color-only
 
+[pull]
+	ff = only
