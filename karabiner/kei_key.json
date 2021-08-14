@@ -1,0 +1,25 @@
+{
+  "title": "kei keys",
+  "rules": [
+    {
+      "description": "Kei keys",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [ "left_command" ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers":[ "left_command" ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
