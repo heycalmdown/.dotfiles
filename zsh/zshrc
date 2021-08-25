@@ -7,8 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-path=('/opt/homebrew/bin' $path)
-export PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/kson/.oh-my-zsh
@@ -64,7 +63,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(autojump)
 plugins+=(git)
-plugins+=(zsh-nvm)
+#plugins+=(fzf)
+#plugins+=(zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,13 +104,10 @@ source ~/.dotfiles/bash_exports
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -r ~/.ksonrc ]; then
 	source ~/.ksonrc
 fi
-
-source ~/.dotfiles/zsh/.purepower
 
 POWERLEVEL9K_MODE=nerdfont-complete
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
@@ -127,6 +124,8 @@ POWERLEVEL9K_STATUS_OK_BACKGROUND=grey53
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 eval "$(mcfly init zsh)"
+
