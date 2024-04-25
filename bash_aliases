@@ -1,10 +1,28 @@
 # bash
 #alias ll='ls -alG'
-alias inet='ifconfig | grep inet\ '
 
 # modern commands
 alias ll='exa -al --icons'
 alias cat=bat
+
+# Git
+alias merged='here=$(git branch --show-current); git switch main; git branch -D $here; git pull'
+alias pr='BRANCH=$(git branch --show-current); gp --set-upstream origin $BRANCH; gh pr create --base main --head $BRANCH --fill --web'
+
+alias thmerged='here=$(git branch --show-current); git switch thailand; git branch -D $here; git pull'
+alias thpr='BRANCH=$(git branch --show-current); gp --set-upstream origin $BRANCH; gh pr create --base thailand --head $BRANCH --fill --web'
+
+# Plugo APIs
+alias od='curl https://faas.plugo.town/helper/orders/by-days | npx json-console-table'
+alias od5='curl https://faas.plugo.town/helper/orders/by-days\?d=5 | npx json-console-table'
+alias oo='curl https://faas.plugo.town/helper/open-orders | npx json-console-table'
+alias oo1='curl https://faas.plugo.town/helper/open-orders\?d=1 | npx json-console-table'
+alias oo-1='curl https://faas.plugo.town/helper/open-orders\?d=-1 | npx json-console-table'
+alias om='curl https://faas.plugo.town/helper/orders/by-min | npx json-console-table'
+alias om-1='curl https://faas.plugo.town/helper/orders/by-min\?d=-1 | npx json-console-table'
+alias om1='curl https://faas.plugo.town/helper/orders/by-min\?d=1 | npx json-console-table'
+alias o10m='curl https://faas.plugo.town/helper/orders/by-min\?m=10 | npx json-console-table'
+alias o10m-1='curl https://faas.plugo.town/helper/orders/by-min\?m=10\&d=-1 | npx json-console-table'
 
 # docker
 alias dops='docker ps'
@@ -25,9 +43,6 @@ alias dce='dc -f dce.yml'
 alias dsrm='docker stack rm'
 alias dsdp='docker stack deploy --with-registry-auth -c docker-compose.yml'
 alias dsr='docker service'
-
-# whalelike
-alias xhyve='docker run --rm -it --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n sh'
 
 # functions
 function dolog_first {
